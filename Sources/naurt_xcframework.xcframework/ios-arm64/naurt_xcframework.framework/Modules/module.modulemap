@@ -1,0 +1,20 @@
+framework module naurt_xcframework{
+    umbrella header "naurt_xcframework.h"
+//    header "naurt_xcframework.h"
+    
+    export *
+    module * { export * }
+    
+    explicit module ios_sdkFFI{
+        header "ios_sdkFFI.h"
+        export *
+    }
+}
+
+
+
+
+module naurt_xcframework.Swift {
+    header "naurt_xcframework-Swift.h"
+    requires objc
+}
