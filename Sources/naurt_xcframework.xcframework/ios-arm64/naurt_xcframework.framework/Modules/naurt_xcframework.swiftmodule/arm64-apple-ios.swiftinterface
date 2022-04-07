@@ -61,6 +61,24 @@ final public class Naurt : Foundation.ObservableObject {
   final public var $isRunning: Combine.Published<Swift.Bool>.Publisher {
     get
   }
+  @Combine.Published @_projectedValueProperty($sessionState) final public var sessionState: Swift.String {
+    get
+  }
+  final public var $sessionState: Combine.Published<Swift.String>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($locationPermission) final public var locationPermission: CoreLocation.CLAuthorizationStatus {
+    get
+  }
+  final public var $locationPermission: Combine.Published<CoreLocation.CLAuthorizationStatus>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($hasLocation) final public var hasLocation: Swift.Bool {
+    get
+  }
+  final public var $hasLocation: Combine.Published<Swift.Bool>.Publisher {
+    get
+  }
   @Combine.Published @_projectedValueProperty($naurtPoint) final public var naurtPoint: naurt_xcframework.NaurtLocation? {
     get
   }
